@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Norse";
+  src: url("./Norse-Bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+h1 {
+  color: red;
+}
+.img-section {
+  width: 37%;
+  height: 100vh;
+  background-image: url("./cole-keister-nfxIvG2B62I-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 180px;
+  flex: 1;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.lists-container {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+.cred {
+  color: #d8d7d4;
+  font-size: 0.9rem;
+
+  /* position: relative; */
+}
+.logo-font {
+  font-family: "Norse", sans-serif;
+  font-weight: bold;
+  font-size: 6.5rem;
+  display: inline-block;
+  color: #ffffff;
+}
+.odin-img {
+  width: 18%;
+}
+.transparent-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 170px;
+  background-color: rgba(129, 123, 123, 0.288);
+  gap: 5px;
+}
+.intro-para {
+  height: 340px;
+
+  background-color: #f9fafb;
+  padding-top: 100px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.second-section {
+  display: flex;
+  flex-direction: column;
+
+  flex: 2;
+}
+.intro-para p:first-child {
+  width: 65%;
+  margin-bottom: 40px;
+  /* color: aqua; */
+}
+.form-container {
+  height: 300px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+ul > li {
+  display: flex;
+  flex-direction: column;
+}
+.third-sec {
+  background-color: #f9fafb;
+  flex-grow: 1;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+form > legend {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+ul > li > input {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 6px 56px;
+  border: 1px solid rgb(204, 198, 198);
+}
+ul > li > label {
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  color: rgb(109, 109, 109);
+  font-weight: 500;
+}
+input:focus {
+  outline: none;
+  border-color: rgb(0, 81, 255);
+  box-shadow: 2px 2px 1px rgb(175, 173, 173);
+}
+#pass-error {
+  color: red;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+#pass-cor {
+  color: greenyellow;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.create-button {
+  background-color: #708b6d;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 60px;
+  border: 1px solid #708b6d;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 1px rgb(175, 173, 173);
+  font-size: 1.2rem;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.create-button:hover {
+  cursor: pointer;
+  background-color: #8ba088;
+}
+.log-btn {
+  background-color: #f9fafb;
+  color: #708b6d;
+  border: none;
+  font-size: 1.3rem;
+}
+.log-btn:hover {
+  cursor: pointer;
+  font-size: 1.36rem;
+}
+.last {
+  font-size: 1.2rem;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 500;
+}
+.error {
+  border: 1px solid red;
+}
+.correct {
+  border: 1px solid lightgreen;
+}

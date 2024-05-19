@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="icon" href="./forest.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="img-section">
+        <div class="transparent-background">
+          <img class="odin-img" src="./odin-lined.png" alt="" /><span
+            class="logo-font"
+            >Odin</span
+          >
+        </div>
+        <p class="cred">
+          Photo by <a href="https://unsplash.com/@coleito"> Cole Keister</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </div>
+      <div class="second-section">
+        <div class="intro-para">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <div class="form-container">
+          <form action="" id="my-form">
+            <legend>Let's do this!</legend>
+            <div class="lists-container">
+              <ul>
+                <li>
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first-name"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required />
+                </li>
+                <li>
+                  <label for="password-1">PASSWORD</label>
+                  <input
+                    class=""
+                    type="password"
+                    name="password-1"
+                    id="password-1"
+                    required
+                  />
+                  <span id="pass-error"></span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="last_name" id="last-name" required />
+                </li>
+                <li>
+                  <label for="phone">PHONE NUMBER</label>
+                  <input
+                    type="text"
+                    pattern="[789]{1}[0-9]{9}"
+                    name="phone"
+                    id="phone"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="password-2">CONFIRM PASSWORD</label>
+                  <input
+                    class=""
+                    type="password"
+                    name="password-2"
+                    id="password-2"
+                    required
+                  />
+                  <span id="pass-cor"></span>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="third-sec">
+          <button type="submit" form="my-form" class="create-button">
+            Create Account
+          </button>
+          <p class="last">
+            Already have an account?
+            <span><button class="log-btn">Log in</button></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
